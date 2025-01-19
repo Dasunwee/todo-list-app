@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153367, #4e085f);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app {
+    max-width: 540px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.todo-app h2 img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.row input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.row input:focus {
+    border-color: #002765;
+}
+
+.row button {
+    background: #002765;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.row button:hover {
+    background: #003a99;
+}
+
+#task-list {
+    list-style: none;
+}
+select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#task-list li.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+    color: #155724;
+}
+
+#task-list li button {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+#task-list li button:hover {
+    background: #e63939;
+}
+.category {
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    background: gray;
+}
+.category.work { background: #ff6f61; } 
+.category.personal { background: #4caf50; } 
+.category.school { background: #2196f3; } 
